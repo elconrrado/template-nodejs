@@ -1,0 +1,41 @@
+{
+  "name": "template-nodejs",
+  "version": "1.0.0",
+  "description": "Plantilla inicial para proyecto nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elconrrado/template-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elconrrado/template-nodejs/issues"
+  },
+  "homepage": "https://github.com/elconrrado/template-nodejs#readme",
+  "dependencies": {
+    "@hapi/joi": "^15.1.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "module-alias": "^2.2.1",
+    "node-mocks-http": "^1.7.6",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
+  },
+  "_moduleAliases": {
+    "~": "src/",
+    "@config": "src/configs",
+    "@models": "src/models",
+    "@routes": "src/routes",
+    "@services": "src/services"
+  }
+}
