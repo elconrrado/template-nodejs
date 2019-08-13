@@ -1,13 +1,15 @@
 const { exampleService } = require('./exampleService')
 
 describe('exampleService', () => {
-  test('#getPersons', async () => {
-    const people = await exampleService.getPersons();
-    expect(people).toEqual([
-      {
-        name: 'Marlon',
-        lastName: 'Conrado'
-      }
-    ]);
+  test('#getPersonById devuelve persona', async () => {
+    const payload = {
+      id: '11111111'
+    }
+    const person = await exampleService.getPersonById(payload);
+    expect(person).toEqual({
+      id: '11111111',
+      name: 'Luigi',
+      lastName: 'Conrado'
+    });
   });
 });

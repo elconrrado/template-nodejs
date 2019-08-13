@@ -1,13 +1,11 @@
 module.exports = {
-  // preset: 'ts-jest',
   testEnvironment: 'node',
   testPathIgnorePatterns: ['/node_modules/', '/prod_node_modules/', '/dist/'],
   collectCoverage: true,
   collectCoverageFrom: [
     'src/**/*.{ts,tsx,js}',
     '!src/index.js',
-    '!src/@types/**',
-    '!src/configs/loader.js'
+    '!src/@types/**'
   ],
   coverageDirectory: 'test/coverage',
   moduleNameMapper: {
