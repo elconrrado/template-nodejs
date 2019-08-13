@@ -1,11 +1,10 @@
 module.exports = {
   testEnvironment: 'node',
-  testPathIgnorePatterns: ['/node_modules/', '/prod_node_modules/', '/dist/'],
+  testPathIgnorePatterns: ['/node_modules/', '/prod_node_modules/'],
   collectCoverage: true,
   collectCoverageFrom: [
-    'src/**/*.{ts,tsx,js}',
-    '!src/index.js',
-    '!src/@types/**'
+    'src/**/*.js',
+    '!src/index.js'
   ],
   coverageDirectory: 'test/coverage',
   moduleNameMapper: {
