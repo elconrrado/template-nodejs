@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/elconrrado/template-nodejs#readme",
   "dependencies": {
-    "@hapi/joi": "^15.1.0",
+    "@hapi/joi": "^15.1.1",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "module-alias": "^2.2.1",
